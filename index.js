@@ -33,7 +33,7 @@ async function getDataFromSegments(segments) {
             console.log(segments[i]);
             request.on('data', chunk => {
                 writeStream.write(chunk);
-                console.log(`on data ${segments[i]`);
+                console.log(`on data ${segments[i]}`);
             })
         } catch (err) {
             console.log(err);
